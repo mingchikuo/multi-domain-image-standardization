@@ -1,5 +1,5 @@
 """
-Copyright © 2023 Ming-Chi Kuo (Mitchel)
+Copyright © 2023 Ming-Chi Kuo (Mitchel) and https://github.com/mingchikuo
 
 1. Hi everyone, I'm Ming-Chi Kuo (Mitchel), an AI and software algorithm developer. You can find my work on GitHub at https://github.com/mingchikuo.
 
