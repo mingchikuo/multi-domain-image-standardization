@@ -1,16 +1,17 @@
 """
-Copyright © 2023 Ming-Chi Kuo (Mitchel) and https://github.com/mingchikuo
+Copyright © 2023 Ming-Chi Kuo (Mitchel)
 
-Hi everyone, I'm Ming-Chi Kuo (Mitchel), an AI and software algorithm developer. You can find my work on GitHub at https://github.com/mingchikuo.
+1. Hi everyone, I'm Ming-Chi Kuo (Mitchel), an AI and software algorithm developer. You can find my work on GitHub at https://github.com/mingchikuo.
 
-If you wish to utilize any of the open-source algorithms I have provided for personal or research purposes, 
+2. If you wish to utilize any of the open-source algorithms I have provided for personal or research purposes, 
 
 kindly acknowledge the authorship by crediting me (Ming-Chi Kuo) and including my GitHub profile URL(https://github.com/mingchikuo).
 
-Please note that any commercial use of these open-source algorithms is strictly prohibited without my explicit consent.
+3. Please note that any commercial use of these open-source algorithms is strictly prohibited without my explicit consent.
 
-For inquiries or potential collaborations, please feel free to reach out to me via my GitHub profile.
+4. For inquiries or potential collaborations, please feel free to reach out to me via my GitHub profile.
 """
+
 import cv2
 import numpy as np
 import os
