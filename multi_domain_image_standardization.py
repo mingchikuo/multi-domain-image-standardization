@@ -32,7 +32,7 @@ class MultiDomainStandardizer(ImageOnlyTransform):
         normalized_img = self.normalize_brightness(balanced_img)
         
         # Step 3: Normalize Contrast (Optional: You can use CLAHE or other methods)
-        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(4, 4))
         img_lab = cv2.cvtColor(normalized_img, cv2.COLOR_BGR2Lab)
         img_lab[:,:,0] = clahe.apply(img_lab[:,:,0])
         contrast_normalized_img = cv2.cvtColor(img_lab, cv2.COLOR_Lab2BGR)
@@ -56,7 +56,7 @@ class MultiDomainStandardizer(ImageOnlyTransform):
         b = np.clip(b * b_gain, 0, 255).astype(np.uint8)
         return cv2.merge((r, g, b))
 
-    def normalize_brightness(self, img, target_mean=128):
+    def normalize_brightness(self, img, target_mean=100):
         # Normalize brightness to the target mean value
         img_lab = cv2.cvtColor(img, cv2.COLOR_BGR2Lab)
         l_channel = img_lab[:, :, 0].astype(np.float32)
