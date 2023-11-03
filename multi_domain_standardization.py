@@ -22,7 +22,6 @@ class MultiDomainStandardization(ImageOnlyTransform):
         return standardized_img
 
     def dynamic_white_balance(self, img):
-        # Your implementation here
         r, g, b = cv2.split(img)
         r_avg = np.mean(r)
         g_avg = np.mean(g)
@@ -39,7 +38,6 @@ class MultiDomainStandardization(ImageOnlyTransform):
         return cv2.merge((r, g, b))
 
     def normalize_brightness(self, img, target_mean=64):
-        # Your implementation here
         img_lab = cv2.cvtColor(img, cv2.COLOR_BGR2Lab)
         l_channel = img_lab[:, :, 0].astype(np.float32)
         mean_val = np.mean(l_channel)
